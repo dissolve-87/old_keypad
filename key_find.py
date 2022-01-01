@@ -4,8 +4,8 @@ num = {2:{1:"a",2:"b",3:"c"},3:{1:"d",2:"e",3:"f"},4:{1:"g",2:"h",3:"i"},5:{1:"j
 with open("data.txt","r") as file:
     try:
         for line in file:
-            ky = key.append(int(line.rstrip()[0]))
-            va = val.append(int(line.rstrip()[2]))
+            key.append(int(line.rstrip()[0]))
+            val.append(int(line.rstrip()[2]))
     except:
         print("Please Enter Correct input")
         exit(0)
